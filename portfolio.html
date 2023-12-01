@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="logos" id="CSSLogo" src="./assets/CSSLogo.png" alt="CSSLogo" />
+      <img class="logos" id="HTMLLogo" src="./assets/HTMLLogo.png" alt="HTMLLogo" />
+      <img class="logos" id="JSLogo" src="./assets/JSLogo.png" alt="JSLogo" />
+      <img class="logos" id="ReactLogo" src="./assets/reactLogo.png" alt="reactLogo"/>
+      <img class="logos" id="GSAPLogo" src="./assets/GSAPLogo.jpg" alt="GSAPLogo"/>
+      <img class="logos" id="SassLogo" src="./assets/SassLogo.png" alt="SassLogo"/>
+      <img
+        class="logos"
+        id="MySQLLogo" 
+        src="./assets/mysqlLogo.png"
+        style="background-color: white; border-radius: 20%"
+        alt="mysqlLogo"
+      />
+      <img
+        class="logos"
+        id="NodeLogo" 
+        src="./assets/nodeLogo.png"
+        alt="nodeLogo"
+        style="background-color: white; border-radius: 100%"
+      />
+      <img class="logos" id="ExpressLogo" src="./assets/expressLogo.png" alt="ExpressLogo"/>
+    </header>
+    <main>
+      <section id="presentation">
+        <a href="./">
+          <div
+            id="arrow"
+            class="animate__animated animate__jello animate__infinite animate__delay-1s"
+          ></div>
+        </a>
+        <h1 class="scroll">Mes</br>projets</h1>
+      </section>
+      <section id="projectOne">
+        <div class="details">
+          <h2>Flower Clicker</h2>
+          <p>Projet 1 du bootcamp à la wild code school</br>Jeu du style cookie clicker dans le thème des fleurs. Réalisé 100% en vanilla, aucune librairie utilisée.</br>A noter l'utilisation de la fonction requestAnimationFrame() pour le chronomètre, permettant un rafraichissement à chaque frame.</p>
+        </div>
+        <img src="./assets/FlowerClicker.png">
+      </section>
+      <section id="projectTwo">
+        <img src="./assets/lyonnaiseries_marines.png">
+        <div class="details">
+          <h2>Lyonnaiseries Marines</h2>
+          <p>Page d'accueil d'un site e-commerce réalisé pour une créatrice de bijoux</br>La librairie animate.css est utilisée pour l'animation du logo.</p>
+        </div>
+      </section>
+      <section id="projectThree">
+        <div class="details">
+          <h2>La disparition du père noël</h2>
+          <p>Hackathon de 30 heures seulement !</br>Site de génération d'histoires intéractives de noël pour enfant</br>Utilisation de l'API d'openAI</p>
+        </div>
+        <video controls>
+          <source src="./assets/Disparitionperenoel(1).mp4" type="video/mp4" />
+          </video>
+      </section>
+    </main>
+    <script type="module" src="portfolio.js"></script>
+  </body>
+</html>

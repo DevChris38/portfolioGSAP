@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Marhey;
+  src: url(assets/Marhey/Marhey-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Chakra;
+  src: url(assets/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+
+* {
+  font-family: Chakra;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 420vh;
+  width: 97vw;
+  background: hsl(209, 23%, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: hsl(51, 82%, 98%);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#arrow {
+  display: inline-block;
+  height: 4vw;
+  width: 4vw;
+  border-bottom: 4vw solid hsl(51, 82%, 98%);
+  border-right: 4vw solid transparent;
+  position: fixed;
+  rotate: 45deg;
+  bottom: 49vh;
+  left: 5vw;
+}
+
+.logos {
+  max-width: 8vw;
+  max-height: 10vh;
+}
+
+#presentation {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding: 20% 0;
+}
+
+.scroll {
+  width: 100%;
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+#projectOne {
+  height: 80vh;
+  width: 100%;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+section > img {
+  position: relative;
+  width: 40%;
+}
+
+section > video {
+  position: relative;
+  width: 40%;
+}
+
+#projectTwo {
+  height: 80vh;
+  width: 100%;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#projectThree {
+  height: 80vh;
+  width: 100%;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.details {
+  width: 60%;
+  padding: 0 10%;
+}
+
+h2 {
+  font-size: clamp(1rem, 3vw, 3rem);
+  margin-bottom: 5%;
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  line-height: 1.5;
+}
