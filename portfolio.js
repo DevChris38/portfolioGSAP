@@ -1,7 +1,6 @@
-//import projects from "./projects.json" assert { type: "json" };
-import { gsap } from "gsap";
+/*import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);*/
 
 // PROJET UN
 
@@ -10,7 +9,7 @@ let tl = gsap.timeline({
     immediateRender: true,
     trigger: "#projectOne",
     start: "top bottom",
-    end: "top top",
+    end: "top center",
     scrub: true,
     ease: "none",
   },
@@ -64,7 +63,7 @@ gsap
       paused: true,
       trigger: "#projectTwo",
       start: "top bottom",
-      end: "top top",
+      end: "top center",
       scrub: true,
     },
   })
@@ -94,7 +93,7 @@ gsap
       paused: true,
       trigger: "#projectThree",
       start: "top bottom",
-      end: "top top",
+      end: "top center",
       scrub: true,
     },
   })

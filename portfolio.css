@@ -92,9 +92,9 @@ header {
 }
 
 #projectOne {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -111,18 +111,18 @@ section > video {
 }
 
 #projectTwo {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #projectThree {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -141,4 +141,53 @@ h2 {
 p {
   font-size: clamp(0.8rem, 2vw, 2rem);
   line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 600px) {
+  #projectOne,
+  #projectTwo,
+  #projectThree {
+    height: 60vh;
+    width: 100%;
+    margin-top: 40vh;
+    display: flex;
+    gap: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section > img {
+    position: relative;
+    width: 80%;
+  }
+
+  section > video {
+    position: relative;
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0 10%;
+  }
+  #arrow {
+    display: inline-block;
+    height: 8vw;
+    width: 8vw;
+    border-bottom: 8vw solid hsl(51, 82%, 98%);
+    border-right: 8vw solid transparent;
+    position: fixed;
+    rotate: 45deg;
+    bottom: 49vh;
+    left: 10vw;
+  }
 }

@@ -11,15 +11,9 @@
 }
 
 body {
-  height: 100vh;
+  height: 1100vh;
   width: 100vw;
   background: hsl(209, 23%, 10%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
-  gap: 10vh;
 }
 
 h1,
@@ -30,30 +24,51 @@ p {
 }
 
 #imgProfile {
-  width: 20vw;
+  position: fixed;
+  width: 10vw;
   border-radius: 100%;
-  margin: 0 40vw;
+  margin: 20vh 45vw;
 }
 h1 {
+  position: fixed;
+  top: 50vh;
   width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 4rem);
 }
 
 h2 {
+  position: fixed;
+  top: 57.5vh;
+  width: 100%;
   text-align: center;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
+
+p {
+  position: fixed;
+  top: 70vh;
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  color: #ff76b6;
 }
 
 #title {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   width: 100%;
 }
 
-h2 {
-  font-size: 1.2rem;
+#backGround {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 #linkedIn {
@@ -142,4 +157,161 @@ h2 {
   rotate: -135deg;
   bottom: 49vh;
   right: 5vw;
+  opacity: 0;
+}
+
+.box {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 0 2vw 0;
+}
+
+.text {
+  opacity: 0;
+  position: fixed;
+  width: fit-content;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
+
+#first {
+  top: 10vh;
+  left: 10vw;
+}
+
+#second {
+  top: 70vh;
+  left: 30vw;
+}
+
+#third {
+  top: 10vh;
+  left: 60vw;
+}
+
+#forth {
+  top: 70vh;
+  left: 10vw;
+}
+
+#fifth {
+  top: 10vh;
+  left: 30vw;
+}
+
+#sixth {
+  top: 30vh;
+  left: 60vw;
+}
+
+#seventh {
+  top: 70vh;
+  left: 30vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #imgProfile {
+    position: fixed;
+    width: 20vw;
+    border-radius: 100%;
+    margin: 20vh 45vw;
+  }
+
+  #linkedIn {
+    height: 20vw;
+    width: 20vw;
+    border-top: 20vw solid #6d214f;
+    border-right: 20vw solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  #linkedInLogo {
+    width: 8vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+  }
+
+  .hover {
+    background-color: pink;
+  }
+
+  #gitHub {
+    display: inline-block;
+    height: 20vw;
+    width: 20vw;
+    border-top: 20vw solid #b33771;
+    border-left: 20vw solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #gitHubLogo {
+    width: 10vw;
+    position: absolute;
+    top: 1.26vw;
+    right: 1.26vw;
+  }
+
+  #X {
+    display: inline-block;
+    height: 20vw;
+    width: 20vw;
+    border-bottom: 20vw solid #82589f;
+    border-left: 20vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  #XLogo {
+    width: 10vw;
+    position: absolute;
+    bottom: 1.26vw;
+    right: 1.26vw;
+  }
+
+  #mail {
+    display: inline-block;
+    height: 20vw;
+    width: 2;
+    border-bottom: 20vw solid #d6a2e8;
+    border-right: 20vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #mailLogo {
+    width: 10vw;
+    position: absolute;
+    bottom: 1.26vw;
+    left: 1.26vw;
+  }
+
+  #arrow {
+    display: inline-block;
+    height: 8vw;
+    width: 8vw;
+    border-bottom: 8vw solid hsl(51, 82%, 98%);
+    border-right: 8vw solid transparent;
+    position: absolute;
+    rotate: -135deg;
+    bottom: 49vh;
+    right: 10vw;
+    opacity: 0;
+  }
 }
