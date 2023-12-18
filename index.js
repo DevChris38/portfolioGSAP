@@ -70,7 +70,7 @@ let boxCVLogoMove = gsap.to(boxCVLogo, {
   y: "-7.5vw",
 });
 
-boxMailLogoMove.pause();
+boxCVLogoMove.pause();
 
 let boxCVMove = gsap.to(boxCV, {
   paused: false,
@@ -80,7 +80,7 @@ let boxCVMove = gsap.to(boxCV, {
   rotate: 180,
   borderRadius: "100%",
 });
-boxMailMove.pause();
+boxCVMove.pause();
 
 boxLinkedInLogo.addEventListener("mousemove", () => {
   boxLinkedInMove.play();
