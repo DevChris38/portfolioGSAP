@@ -34,7 +34,7 @@ h1 {
   top: 50vh;
   width: 100%;
   text-align: center;
-  font-size: clamp(1.5rem, 2vw, 4rem);
+  font-size: clamp(2rem, 2vw, 4rem);
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
   top: 57.5vh;
   width: 100%;
   text-align: center;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 
 p {
@@ -50,7 +50,7 @@ p {
   top: 70vh;
   width: 100%;
   text-align: center;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
   color: #ff76b6;
 }
 
@@ -147,6 +147,24 @@ p {
   left: 0.63vw;
 }
 
+#CV {
+  display: inline-block;
+  height: 10vw;
+  width: 10vw;
+  border-bottom: 10vw solid #f8efba;
+  border-left: 10vw solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#CVLogo {
+  width: 5vw;
+  position: absolute;
+  bottom: 0.63vw;
+  right: 0.63vw;
+}
+
 #arrow {
   display: inline-block;
   height: 4vw;
@@ -171,7 +189,7 @@ p {
   opacity: 0;
   position: fixed;
   width: fit-content;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 
 #first {
@@ -186,7 +204,7 @@ p {
 
 #third {
   top: 10vh;
-  left: 60vw;
+  left: 40vw;
 }
 
 #forth {

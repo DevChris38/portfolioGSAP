@@ -7,6 +7,8 @@ let boxX = document.querySelector("#X");
 let boxXLogo = document.querySelector("#XLogo");
 let boxMail = document.querySelector("#mail");
 let boxMailLogo = document.querySelector("#mailLogo");
+let boxCV = document.querySelector("#CV");
+let boxCVLogo = document.querySelector("#CVLogo");
 
 let boxLinkedInLogoMove = gsap.to(boxLinkedInLogo, {
   paused: false,
@@ -62,6 +64,24 @@ let boxMailMove = gsap.to(boxMail, {
 });
 boxMailMove.pause();
 
+let boxCVLogoMove = gsap.to(boxCVLogo, {
+  paused: false,
+  x: "-7.5vw",
+  y: "-7.5vw",
+});
+
+boxMailLogoMove.pause();
+
+let boxCVMove = gsap.to(boxCV, {
+  paused: false,
+  x: "-2.5vw",
+  y: "-2.5vw",
+  scale: 2,
+  rotate: 180,
+  borderRadius: "100%",
+});
+boxMailMove.pause();
+
 boxLinkedInLogo.addEventListener("mousemove", () => {
   boxLinkedInMove.play();
   boxLinkedInLogoMove.play();
@@ -81,13 +101,20 @@ boxGitHub.addEventListener("mouseout", () => {
 });
 
 boxMailLogo.addEventListener("mousemove", () => {
-  console.log("toto");
   boxMailMove.play();
   boxMailLogoMove.play();
 });
 boxMail.addEventListener("mouseout", () => {
   boxMailMove.play().reverse();
   boxMailLogoMove.play().reverse();
+});
+boxCVLogo.addEventListener("mousemove", () => {
+  boxCVMove.play();
+  boxCVLogoMove.play();
+});
+boxCV.addEventListener("mouseout", () => {
+  boxCVMove.play().reverse();
+  boxCVLogoMove.play().reverse();
 });
 
 gsap.to("#descendre", {
