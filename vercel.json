@@ -1,0 +1,10 @@
+{
+    "routes": [
+      {
+        "src": "/portfolio",
+        "dest": "/portfolio.html",
+        "status": 200
+      }
+    ]
+  }
+  
