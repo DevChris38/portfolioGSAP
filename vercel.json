@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/portfolio.hmtl",
-        "dest": "./portfolio.html",
+        "dest": "portfolio.html",
         "status": 200
       }
     ]
