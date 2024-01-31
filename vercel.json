@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/portfolio",
-        "dest": "/portfolio.html",
+        "dest": "./portfolio.html",
         "status": 200
       }
     ]
